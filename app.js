@@ -40,7 +40,8 @@ app.post("/register",(req,res)=>{
 		name: req.body.name,
 		Age: req.body.Age,
 		DOJ: req.body.DOJ,
-		batch: req.body.batch
+		batch: req.body.batch,
+		paid : req.body.paid
 	})
 
 	user.save()

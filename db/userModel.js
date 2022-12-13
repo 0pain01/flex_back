@@ -7,7 +7,11 @@ const userSchema = new mongoose.Schema({
 	},
 	Age : String,
     DOJ: String,
-	batch : String
+	batch : String,
+	 paid : {
+	type : Boolean,
+	default: false
+	}
 });
 
 module.exports = mongoose.model.Users || mongoose.model('Users',userSchema);
